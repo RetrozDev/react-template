@@ -1,4 +1,4 @@
-import AbstractManager from "./AbstractManager";
+const AbstractManager = require("./AbstractManager");
 
 class UserManager extends AbstractManager {
   constructor() {
@@ -21,4 +21,4 @@ class UserManager extends AbstractManager {
   }
 }
 
-export default UserManager;
+module.exports = UserManager;

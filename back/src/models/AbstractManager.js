@@ -1,4 +1,4 @@
-import database from "../../database/client";
+const database = require("../../database/client");
 
 class AbstractManager {
   constructor({ table }) {
@@ -8,4 +8,4 @@ class AbstractManager {
   }
 }
 
-export default AbstractManager;
+module.exports = AbstractManager;

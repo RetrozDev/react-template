@@ -1,5 +1,4 @@
 {
-  "type": "module",
   "scripts": {
     "dev": "nodemon index.js",
     "db:migrate": "node migrate.js",

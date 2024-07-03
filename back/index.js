@@ -1,9 +1,10 @@
-import dotenv from "dotenv";
 
-import app from "./src/app.js";
 
-dotenv.config();
-dotenv.config({ path: "../front/.env" });
+require("dotenv").config();
+require("dotenv").config({ path: "../front/.env" });
+const app = require("./src/app.js")
+
+
 const port = process.env.APP_PORT;
 const backendUrl = process.env.VITE_BACKEND_URL;
 

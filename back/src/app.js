@@ -1,9 +1,9 @@
-import express from "express";
-import cors from "cors";
-import cookieParser from "cookie-parser";
-import bodyParser from "body-parser";
+const express = require("express");
+const cors = require("cors");
+const cookieParser = require("cookie-parser");
+const bodyParser = require("body-parser");
 
-import router from "./router";
+const router = require("./router");
 
 const app = express();
 
@@ -18,4 +18,5 @@ app.use(cookieParser());
 app.use(bodyParser.json);
 
 app.use("/api", router);
-export default app;
+
+module.exports = app;

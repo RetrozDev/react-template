@@ -1,4 +1,4 @@
-import tables from "../tables";
+const tables = require("../tables");
 const browse = async (req, res, next) => {
   try {
     const users = await tables.users.readAll();
@@ -21,7 +21,7 @@ const read = async (req, res, next) => {
   }
 };
 
-export default {
+module.exports = {
   browse,
   read,
 };

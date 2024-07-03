@@ -1,4 +1,4 @@
-import UserManager from "./models/UserManager";
+const UserManager = require("./models/UserManager");
 
 const managers = [
   UserManager,
@@ -23,4 +23,4 @@ module.exports = new Proxy(tables, {
   },
 });
 
-export default tables;
+module.exports = tables;
